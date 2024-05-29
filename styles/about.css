@@ -1,0 +1,42 @@
+.about {
+    padding: 1.5rem;
+    background-color: var(--color-tres);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 1rem;
+}
+
+.about__title {
+    font-size: 2rem;
+    color: var(--color-cuatro);
+}
+
+.about__paragraph {
+    font-size: 1.2rem;
+    color: var(--color-cuatro);
+    text-align: justify;
+}
+
+.about__container img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .about__container {
+        width: 100%;
+    }
+
+    .about__title {
+        font-size: 1.5rem;
+    }
+
+    .about__paragraph {
+        font-size: .9rem;
+    }
+}

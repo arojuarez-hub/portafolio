@@ -1,0 +1,144 @@
+.formcontacto {
+    background-color: var(--color-tres);
+    padding: 1.5rem 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.formcontacto__contacto {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    gap: 1rem;
+}
+
+.formcontacto__izquierda {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formcontacto__img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.formcontacto__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding: 2rem;
+}
+
+.formcontacto__title {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.formcontacto__subtext {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: .3rem;
+}
+
+.formcontacto__form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input {
+    position: relative;
+}
+
+.formcontacto__input, .formcontacto__textarea {
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.formcontacto__textarea {
+    resize: none;
+}
+
+.formcontacto__boton {
+    width: 25%;
+    padding: .8rem;
+    color: var(--color-dos);
+    background-color: #fff;
+    border: 1px solid var(--color-dos);
+    cursor: pointer;
+}
+
+.formcontacto__boton:hover {
+    background-color: var(--color-dos);
+    border: 1px solid var(--color-dos);
+    color: #fff;
+}
+
+@media (max-width: 768px) { 
+    .formcontacto {
+        padding: 2rem;
+    }
+
+    .formcontacto__contacto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .formcontacto__izquierda {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .formcontacto__text {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .formcontacto__img {
+        display:none;
+    }
+
+
+    .formcontacto__boton {
+        width: 50%;
+    }
+}
+
+@media (max-width: 425px) {
+    .formcontacto {
+        padding: 1rem;
+    }
+
+    .formcontacto__title {
+        font-size: 1.5rem;
+    }
+
+    .formcontacto__subtext {
+        font-size: 0.875rem;
+    }
+
+    .formcontacto__img {
+        display:none;
+    }
+
+    .formcontacto__input, .formcontacto__textarea {
+        font-size: 0.875rem;
+    }
+
+    .formcontacto__boton {
+        width: 100%;
+    }
+}
+

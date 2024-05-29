@@ -1,0 +1,44 @@
+@import url(/styles/menu.css);
+@import url(/styles/title.css);
+@import url(/styles/about.css);
+@import url(/styles/skills.css);
+@import url(/styles/hobbies.css);
+@import url(/styles/academic.css);
+@import url(/styles/experience.css);
+@import url(/styles/formcontacto.css);
+@import url(/styles/footer.css);
+@import url(/styles/header.css);
+@import url(/styles/profile.css);
+@import url(/styles/reset.css);
+
+:root {
+    --color-uno: #F2CB05;
+    --color-dos: #BF304A;
+    --color-tres: #7B3E8C;
+    --color-cuatro: #f2f2f2;
+    --color-cinco: #0D0D0D;
+}
+
+* {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+h1, h2, h3, h4, h5, p, input, textarea, button {
+    color: var(--color-cinco);
+    border: none;
+    outline: none;
+}

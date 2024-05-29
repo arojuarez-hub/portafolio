@@ -1,0 +1,127 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: var(--color-cuatro);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.experience__section__title {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    /* color: var(--color-cuatro); */
+}
+
+.experience__box {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    gap: 1rem;
+}
+
+.experience__box:nth-child(3), .experience__box:nth-child(5) {
+    flex-direction: row-reverse;
+}
+
+.experience__img {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.experience__title {
+    font-size: 1.5rem;
+}
+
+.experience__text {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.experience__info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.experience__botao--repo {
+    padding: .8rem;
+    color: var(--color-dos);
+    background-color: #fff;
+    border: 1px solid var(--color-dos);
+    cursor: pointer;
+}
+
+.experience__botao--repo:hover, .experience__botao--demo:hover {
+    transform: scale(1.1);
+}
+
+.experience__botao--demo {
+    margin: .4rem;
+    padding: .8rem;
+    color: #fff;
+    background-color: var(--color-dos);
+    border: 1px solid var(--color-dos);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .experience__box {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+        text-align: center; /* Añadido para centrar el texto */
+        padding: 1rem; /* Añadido para ajustar el padding */
+    }
+
+    .experience__box:nth-child(3), .experience__box:nth-child(5) {
+        flex-direction: column;
+    }
+
+    .experience__img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .experience__box {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        text-align: center; /* Añadido para centrar el texto */
+        padding: 1rem; /* Añadido para ajustar el padding */
+    }
+
+    .experience__box:nth-child(3), .experience__box:nth-child(5) {
+        flex-direction: column;
+    }
+
+    .experience__img {
+        width: 100%;
+        margin-bottom: 1rem; /* Añadido para dar espacio debajo de la imagen */
+    }
+
+    .experience__title {
+        font-size: 1.25rem; /* Ajustado el tamaño de la fuente */
+    }
+
+    .experience__text {
+        font-size: 0.875rem; /* Ajustado el tamaño de la fuente */
+    }
+
+    .experience__botao--repo, .experience__botao--demo {
+        width: 100%; /* Asegura que los botones ocupen el ancho completo */
+        padding: 0.8rem; /* Ajusta el padding para los botones */
+        font-size: 0.875rem; /* Ajusta el tamaño de la fuente en los botones */
+    }
+
+    .experience__description {
+        width: 100%; /* Asegura que el contenedor de la descripción ocupe el ancho completo */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
